@@ -1,3 +1,31 @@
+.search {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 100%;
+    background-color: #34146d;
+    background-image: url(../svg/search-svgrepo-com.svg);
+    background-size: 1.1rem;
+    background-position: 12px 10px;
+    background-image: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 0.8em 1em 0.8em 2.9em;
+    border: none;
+    border-radius: 0.6rem;
+    color: #FFF;
+    outline: none;
+    font: 400 14px 'Roboto';
+    cursor: text;
+}
+
+.search input::placeholder {
+    color: #FFF;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -55,6 +83,7 @@
     height: 70px;
     border-style: none;
     align-self: flex-end;
+    cursor: grab;
 }
 
 .normal {

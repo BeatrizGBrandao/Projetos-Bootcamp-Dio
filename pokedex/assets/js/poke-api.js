@@ -24,14 +24,23 @@ pokeApi.getPokemonDetail = (pokemon) => {
 }
 
 pokeApi.getPokemons = (offset = 0, limit = 5) => {
-    const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
+    const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
     return fetch(url)
         .then((response) => response.json())
         .then((jsonBody) => jsonBody.results)  
         .then((pokemons) => pokemons.map((pokemon) => pokeApi.getPokemonDetail(pokemon)))
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
+}
+
+pokeApi.searchPokemon = (pokeSearch) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokeSearch}/`;
+
+    return fetch(url)
+        .then((response) => response.json())
+        .then((pokemon) => convertPokeApiDetailToPokemon(pokemon))
+        .then((pokeConvertido) => pokeConvertido)
 }
 
 
