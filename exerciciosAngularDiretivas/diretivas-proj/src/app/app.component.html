@@ -1,0 +1,7 @@
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+
+<ng-template #anotherBlock>
+  <p>Olá, eu sou um bloco secreto, só apareço se o elemento/ componente que estou atrelado for false.</p>
+</ng-template>
+
+<router-outlet></router-outlet>
