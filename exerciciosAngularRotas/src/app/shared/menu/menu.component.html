@@ -1,0 +1,19 @@
+<!-- <div>
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/portfolio">PORTFOLIO</a></li>
+    </ul>
+</div> -->
+<!-- Dessa forma, toda vez que clicamos em um a, a aplicação dá um restart, e nã queremos isso. Pois, queremos utilizar o single-page aplicattion, sem a necessidade de restartar a aplicação  -->
+
+<div>
+    <ul>
+        <li>
+            <a [routerLink]="['/']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">
+                HOME
+            </a>
+        </li>
+        <li><a [routerLink]="['/portfolio']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">PORTFOLIO</a></li>
+    </ul>
+</div>
+<!-- import { RouterModule } from '@angular/router'; // Para utilizar o [routerLink] -->
