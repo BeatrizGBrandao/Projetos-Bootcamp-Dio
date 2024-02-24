@@ -1,0 +1,34 @@
+.container-small-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-small-card > a {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.small-card-photo {
+    width: 35%;
+}
+
+.small-card-photo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-card-title {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.small-card-title > h1 {
+    font-size: 20px;
+}
+.container-small-card > hr {
+    align-self: center;
+    width: 78%;
+}
