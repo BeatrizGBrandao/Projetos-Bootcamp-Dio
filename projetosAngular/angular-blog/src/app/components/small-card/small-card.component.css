@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     padding-left: 1em;
+    width: 40%;
 }
 
 .small-card-title > h1 {
@@ -30,5 +31,5 @@
 }
 .container-small-card > hr {
     align-self: center;
-    width: 78%;
+    width: 71%;
 }

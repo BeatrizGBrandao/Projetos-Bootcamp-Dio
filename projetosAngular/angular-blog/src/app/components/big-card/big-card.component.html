@@ -1,13 +1,13 @@
 <div class="container-big-card">
-    <a href="#">
+    <a [routerLink]="['content', id]">
         <div class="big-card-photo">
-            <img src="https://www.angularjswiki.com/angular/use-ngoptimizedimage-to-improve-image-loading-performance-in-angular/featured.png">
+            <img src="{{ photoCover }}">
         </div>
         <div class="big-card-title">
-            <h1>Saiu a nova versão do Angular</h1>
+            <h1>{{ cardTitle }}</h1>
         </div>
         <div class="big-card-description">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odit adipisci alias expedita? Eaque cumque reiciendis, et quia repellat dignissimos impedit distinctio porro ex maxime eveniet ipsa libero ipsam! Ad?</p>
+            <p>{{ cardDescription }}</p>
         </div>
     </a>
 </div>

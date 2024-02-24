@@ -1,0 +1,47 @@
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.content-cover {
+    width: 40%;
+    margin: 2em 0;
+}
+
+.content-cover > img {
+    width: 100%;
+}
+
+.container-title {
+    text-align: center;
+    width: 50%;
+}
+
+.container-description {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    width: 70%;
+}
+
+.container-description > a {
+    font-weight: bolder;
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 3em;
+    padding: 0.2em 0.9em;
+}
+
+.container-description > p {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .content-cover {
+        width: 100%;
+    }
+  }

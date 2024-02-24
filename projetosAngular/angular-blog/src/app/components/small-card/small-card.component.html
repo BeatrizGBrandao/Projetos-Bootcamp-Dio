@@ -1,10 +1,10 @@
 <div class="container-small-card">
-    <a href="">
+    <a [routerLink]="['content', id]">
         <div class="small-card-photo">
-            <img src="https://www.angularjswiki.com/angular/use-ngoptimizedimage-to-improve-image-loading-performance-in-angular/featured.png">
+            <img src="{{ photoCover }}">
         </div>
         <div class="small-card-title">
-            <h1>Saiu a nova versão do Angular</h1>
+            <h1>{{ cardTitle }}</h1>
         </div>
     </a>
     <hr>

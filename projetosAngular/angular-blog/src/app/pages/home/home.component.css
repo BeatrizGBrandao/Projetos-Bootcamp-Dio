@@ -6,24 +6,25 @@
 }
 
 .articles-main {
-    width: 50%;
+    width: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.articles-main-big-card {
+.articles-main > app-big-card {
     display: flex;
     justify-content: center;
 }
 
 .articles-orthers {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.articles-orthers-small {
+.articles-orthers > app-small-card {
     display: flex;
     justify-content: center;
 }
